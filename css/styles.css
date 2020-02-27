@@ -37,7 +37,9 @@ h1 {
   color: var(--clr-dark);
 }
 
-.label__decimal {
+label,
+input {
+  margin-bottom: 0.5em;
 }
 
 .title {
@@ -56,13 +58,13 @@ h1 {
 
 .section__binary {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 .btn__binary {
-  margin-left: 0.5em;
+  margin-top: 1em;
   display: inline-block;
   border: none;
   background: var(--clr-light);
@@ -98,7 +100,7 @@ h1 {
 
 @media (min-width: 800px) {
   :root {
-    --fs-h1: 4.5rem;
+    --fs-h1: 3.5rem;
     --fs-body: 1.125rem;
   }
 }
@@ -108,9 +110,7 @@ h1 {
     --fs-h1: 3.5rem;
     --fs-body: 1rem;
   }
-  .section__subtitle {
-    margin-top: -1em;
-  }
+
   .section__binary {
     flex-direction: column;
   }
