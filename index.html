@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bree+Serif|Slabo+27px&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Binary to decimal</title>
+  </head>
+  <body>
+    <section class="title">
+      <h1 class="title__intro">Bin2Dec</h1>
+      <p class="section__subtitle">
+        A binary to decimal converter.
+      </p>
+    </section>
+
+    <section class="section__binary">
+      <input
+        type="text"
+        maxlength="8"
+        class="input__binary"
+        onkeypress="isBinary(event)"
+        placeholder="enter your binary"
+      />
+      <button class="btn__binary">Calculate</button>
+    </section>
+
+    <section class="section__decimal">
+      <div>
+        <label class="label__decimal"></label>
+      </div>
+    </section>
+
+    <footer class="footer">
+      &copy Gi Souza
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
