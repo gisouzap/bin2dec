@@ -19,16 +19,24 @@
     </section>
 
     <section class="section__binary">
+      <label for="input">
+        Binary:
+      </label>
       <input
         type="text"
         maxlength="8"
+        id="input"
         class="input__binary"
         onkeypress="isBinary(event)"
         placeholder="enter your binary"
       />
+      <label for="output">
+        Decimal:
+      </label>
       <input
         type="text"
         readonly="true"
+        id="output"
         class="output__decimal"
         placeholder="your decimal"
       />
