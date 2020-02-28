@@ -22,6 +22,6 @@ function isBinary(evt) {
   var ch = String.fromCharCode(evt.which);
   if (!/[0-1]/.test(ch)) {
     evt.preventDefault();
-    //error message here.
+    window.alert("Enter 0 or 1.");
   }
 }
