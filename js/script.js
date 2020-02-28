@@ -1,25 +1,27 @@
 const btn = document.querySelector(".btn__binary");
-const label = document.querySelector(".label__decimal");
+const output = document.querySelector(".output__decimal");
 
 btn.addEventListener("click", () => {
-  clear();
   const value = document.querySelector(".input__binary").value;
   binaryDecimal(value);
+  clear();
 });
 
 function binaryDecimal(value) {
   let decimal = parseInt(value, 2);
-  const text2 = document.createTextNode(decimal);
-  label.appendChild(text2);
+  output.value = decimal;
 }
 
 function clear() {
-  label.innerHTML = "";
+  output.innerHTML = "";
+  //to clear input binary
+  //document.querySelector(".input__binary").value = "";
 }
 
 function isBinary(evt) {
   var ch = String.fromCharCode(evt.which);
   if (!/[0-1]/.test(ch)) {
     evt.preventDefault();
+    //error message here.
   }
 }
