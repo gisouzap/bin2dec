@@ -7,6 +7,10 @@
       href="https://fonts.googleapis.com/css?family=Bree+Serif|Slabo+27px&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/da5281fdbd.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="css/styles.css" />
     <title>Binary to decimal</title>
   </head>
@@ -27,7 +31,7 @@
         maxlength="8"
         id="input"
         class="input__binary"
-        onkeypress="isBinary(event)"
+        onkeydown="isBinary(event)"
         placeholder="enter your binary"
       />
       <label for="output">
@@ -38,7 +42,16 @@
     </section>
 
     <footer class="footer">
-      &copy Gi Souza
+      <p>Made with ☕ by <a href="http://gisouza.com/"> Gi</a></p>
+      |
+      <a href="https://github.com/gisouza-p/bin2dec" target="_blank"
+        ><i class="fab fa-github"></i
+      ></a>
+      |
+
+      <a href="https://www.linkedin.com/in/gisouza-p/" target="_blank"
+        ><i class="fab fa-linkedin"></i
+      ></a>
     </footer>
 
     <script src="js/script.js"></script>

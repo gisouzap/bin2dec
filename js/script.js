@@ -14,8 +14,9 @@ function binaryDecimal(value) {
 
 function clear() {
   output.innerHTML = "";
-  //to clear input binary
-  //document.querySelector(".input__binary").value = "";
+  /* to clear input binary
+   *  document.querySelector(".input__binary").value = "";
+   */
 }
 
 function isBinary(evt) {
